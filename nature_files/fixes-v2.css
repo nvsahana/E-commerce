@@ -1,0 +1,4 @@
+/* dejans */
+nav.tm-navbar, nav.tm-navbar > div.uk-container {
+    height: 0px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<nav class="nav nav_top">
+	<div class="logo">
+			<a href="index.html"><img src="bitlogo.png" width="150px"></a>
+		</div>
+		<div class="nav_side">
+			<a href="aboutus.html">About Us</a>
+			<a href="service.html">Services</a>
+			<a href="contact.html">Contact</a>
+			<a href="blog.html">Blog</a>
+			<a href="login.html">Login/Register</a>
+		</div>
+	</div>
+</nav>
+<div class="about_us">
+	<h2>About Us</h2>
+	<div class="about_content">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+  		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<hr>
+	<h2>Our Mission</h2>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+<div class="feed">
+  	<h2>Write a review</h2>
+  	<div class="feed_form">
+  		<form name="submit-form" method="post">
+  			<input type="text" name="Name" placeholder="Name"><br>
+  			<input type="email" name="Email" placeholder="Email Id"><br>
+  			<input type="number" name="Number" placeholder="Contact Number"><br>
+  			<textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+  			<button type="submit">Submit</button>
+  		</form>
+  	</div>
+  </div>
+
+
+
+
+	<footer>
+		<div class="footer_logo">
+			<a href="index.html"><img src="bitlogo.png" width="150"></a>
+		</div>
+		<div class="pages">
+			<h3>Pages</h3>
+			<a href="about.html">About us</a>|
+			<a href="service.html">Services</a>|
+			<a href="blog.html">Blogs</a>|
+			<a href="">Login</a>|
+			<a href="">Sign Up</a>|
+		</div>
+		<div class=doc>
+			<h3>Documents</h3>
+			<a href="">Privacy Policy</a>|
+			<a href="">Terms of Use</a>|
+			<a href="">Refund Policy</a>|
+		</div>
+		<div class="social">
+			<h3>Follow Us</h3>
+			<a href="https://m.facebook.com/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/company/1stop-ai/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/onestopai?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</div>
+		<div class="contact">
+			<h3>Contact</h3>
+
+			<a href="https://api.WhatsApp.com/send?/phone=+919986994500" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+			<a href="tel: +919123456789"><i class="fa fa-phone" aria-hidden="true"></i></a>
+			<a href="mailto: support@1stop.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		</div>
+		<hr>
+		<p>Copyright &copy; 2021 BIT(1BI18CS091). All rights reserved</p>
+	</footer>
+	
+<script type="text/javascript">
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbyMOTT4EULB6XVJDpyOgju82i5ytcS8LI5vIhtplseLVAEJkvFzU1l-eV79ktfGsSgm/exec'
+            const form = document.forms['submit-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+            </script>
+</body>
+</html>
